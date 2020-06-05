@@ -31,6 +31,12 @@ The following fields are present in the dataset:
 - registered - number of registered user rentals initiated
 - cnt - number of total rentals (Dependent Variable)
 
+The data is skewed in terms of distribution despite removal of outliers to a certain degree with the following plots indicating the nature of data towards right skewness before and after outlier treatment.
+
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/reg_plot_%26_prob_plot.png)<br/>
+
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/skewness.png)<br/>
+
 ## Libraries Used
 
 - numpy
@@ -48,18 +54,30 @@ The following fields are present in the dataset:
 ## Files in the repository
 
 - Data: It contains two csv files whose features are combined into hour.csv for convenience to use
+- assets: Contains all output images
 - network.py: The neural network class built from scratch in numpy as a separate file
 - model.ipynb: The data exploration, and model building with evaluation metrics
 
 ## Analysis Summary
 
+We build a neural network model from scratch using numpy only for the given data
+
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/neural_network.png)<br/>
+
+
+
 - When is the peak hours for the demand of bike sharing?
 
 The timing between 7 AM to 8 AM and 5 PM to 6 PM has a sudden rise in ridership which indicates that the morning office going hours and the returning office hours are densely populated and hence, users especially the registered users highly correlated with the timings are most actively using the share pooling.
 
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/outlier_analysis.png)<br/>
+
 - What are the chances of the casual users to become registered users?
 
 The casual users have a probability of 0.51 to become registered users evident from their correlation which indicates a positive increasing relationship. This also indicates that the rider business is going well with a 50% chance of getting premium users and thus can be enhanced further if we target the particular months where increased ridership can be viewed.
+
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/correlation.png)<br/>
+
 
 - Which season has the lowest ridership?
 
@@ -68,6 +86,8 @@ Spring tends to have the lowest possible median and consequently less ridership 
 - Which time period is ideal for increasing the supply of bikes?
 
 The time period from december 22 to new year eve seems to have typical higher surge in demand of bikes which was not completely captured by the neural network and hence, we can use this time period to optimize the number of bikes available in order to expand the user base. However, giving more offers to the existing user base ie registered users is more ideal since this is a temporary surge in demand and hence the chances that the casual users become premium susbscribers is low but with more offers to registered users, it will attract the casual users to convert to premium users.
+
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/final.png)<br/>
 
 ## Summary
 
