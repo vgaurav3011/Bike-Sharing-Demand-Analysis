@@ -64,7 +64,8 @@ We build a neural network model from scratch using numpy only for the given data
 
 ![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/neural_network.png)<br/>
 
-
+The training vs validation loss were close enough with a good attempt on hyperparameter tuning
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/trainloss.png)<br/>
 
 - When is the peak hours for the demand of bike sharing?
 
