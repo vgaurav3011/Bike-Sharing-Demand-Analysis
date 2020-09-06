@@ -1,7 +1,7 @@
 # Bike-Sharing-Demand-Analysis
 A quick overview and insights into predicting the demand and supply of bike share pooling by building a network from scratch
 
-## Overview
+## Business Understanding
 
 Bike Sharing is a simple pooling up concept to reduce pollution based on demands of bikes in a given area that allows multiple groups of people to share and reuse the same set of bikes automated through kiosks where a user can hold a membership and pay the rent as per the requirements basis.
 
@@ -89,6 +89,12 @@ Spring tends to have the lowest possible median and consequently less ridership 
 The time period from december 22 to new year eve seems to have typical higher surge in demand of bikes which was not completely captured by the neural network and hence, we can use this time period to optimize the number of bikes available in order to expand the user base. However, giving more offers to the existing user base ie registered users is more ideal since this is a temporary surge in demand and hence the chances that the casual users become premium susbscribers is low but with more offers to registered users, it will attract the casual users to convert to premium users.
 
 ![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/final.png)<br/>
+
+## Deployment
+
+I worked with Washington Bike Sharing Data as well to deploy a Streamlit app with choice of machine learning models in live processing, input data taken from the user or direct raw data used from the CSV present in the directory to visualise the trip history, and vehicle counts of the rides.
+
+![alt-text](https://raw.githubusercontent.com/vgaurav3011/Bike-Sharing-Demand-Analysis/master/assets/visual.gif)
 
 ## Summary
 
